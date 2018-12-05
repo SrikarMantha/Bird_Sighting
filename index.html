@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Bird Sighting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+        <div class="container">
+            <div class="bird">
+                <label class="l1"> Bird Species </label>
+                <input type="text" name="Bird Species" id="bird" list="birdssp">
+                <datalist id="birdssp">
+                    <option value="Sparrow">
+                    <option value="Penguin">
+                    <option value="Humming Bird">
+                    <option value="Owl">
+                    <option value="Goose">
+                    <option value="Pigeon">
+                    <option value="Swifts">
+                </datalist>
+            </div>
+            <div class="date">
+                <label class="l2"> Date of sighting </label>
+                <input type="date" name="Date of sighting" id="date">
+            </div>
+            <div class="number">
+                <label class="l3"> Number </label>
+                <input type="text" name="Number" id="number">
+            </div>
+            <div class="location">
+                <label class="l4"> Location </label>
+                <input type="text" name="Location" id="location">
+            </div>
+            <div class="form-button">
+                <input type="submit" value="Add" class="add">
+            </div>
+        </div>
+    </form>
+    <td>
+        <table align="center" class="tb" id="list">
+            <thead>
+                <tr>
+                    <th>Bird Species</th>
+                    <th>Date of sighting</th>
+                    <th>Number Sighted</th>
+                    <th>Location</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </td>
+    <script src="script.js"></script>
+</body>
+
+</html>
